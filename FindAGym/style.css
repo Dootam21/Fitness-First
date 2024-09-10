@@ -671,11 +671,13 @@ img {
 
 .rich-text .rich-item.put-ff .join-now-btn {
     background-color: white;
-    color: black;
-    font-weight: 600;
 }
 
-.rich-text .rich-item.put-ff .join-now-btn:hover {
+.rich-text .rich-item.put-ff .join-now-btn p {
+    color: black;
+}
+
+.rich-text .rich-item.put-ff .join-now-btn.btn::before {
     background-color: #ededec;
 }
 
@@ -685,10 +687,9 @@ img {
     font-weight: 600;
 }
 
-.rich-text .rich-item.membership .membership-btn:hover {
+.rich-text .rich-item.membership .membership-btn.btn::before {
     background-color: #424242;
 }
-
 
 .header-footer {
     font-weight: 700;
