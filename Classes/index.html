@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Library/Bootstrap/bootstrap.min.css">
+    <link rel="shortcut icon" href="../image/favicon.ico">
+    <link rel="stylesheet" href="../Library/OwlCarousel/owl.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Gyms Near Me | Find a Fitness First Gym With Our Gym Locator!</title>
+</head>
+
+<body>
+    <div class="header1">
+        <div class="wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="secondary-header">
+                            <div class="user-login">
+                                <a href="../Login/index.html">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_111_17)">
+                                            <path
+                                                d="M12.1476 10.556C10.1409 10.0928 8.27428 9.68683 9.17845 7.97883C11.9318 2.78017 9.90762 0 7.00028 0C4.03695 0 2.06295 2.88633 4.82328 7.97883C5.75545 9.69733 3.81762 10.1022 1.85412 10.556C0.0621153 10.9702 -0.00555133 11.8603 0.000282001 13.4167L0.00261533 14H13.9979L14.0003 13.4342C14.0073 11.8662 13.9466 10.9725 12.1476 10.556Z"
+                                                fill="black" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_111_17">
+                                                <rect width="14" height="14" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <span>Login</span>
+                                </a>
+                            </div>
+                            <div class="search-box">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_111_27)">
+                                        <path
+                                            d="M14 12.6268L10.3518 9.00667C11.0378 8.071 11.4438 6.9195 11.4438 5.67583C11.4438 2.54567 8.87717 0 5.72133 0C2.56667 0 0 2.54683 0 5.67583C0 8.806 2.56667 11.3517 5.72133 11.3517C6.87212 11.3535 7.99673 11.0083 8.94833 10.3612L12.6163 14L14 12.6268ZM1.67767 5.67583C1.67767 3.46383 3.49183 1.66367 5.7225 1.66367C7.95083 1.66367 9.76617 3.46383 9.76617 5.67583C9.76617 7.88783 7.952 9.68683 5.7225 9.68683C3.49183 9.68683 1.67767 7.88783 1.67767 5.67583Z"
+                                            fill="black" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_111_27">
+                                            <rect width="14" height="14" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span>Search</span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav-hidden">
+        <div class="wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="navbar-hidden">
+                            <button type="button" id="close-tab" name="close" title="close">
+                                <span class="bar top"></span>
+                                <span class="bar bottom"></span>
+                            </button>
+                            <div class="login-hidden">
+                                <a class="login-tag" href="../Login/index.html">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_111_17)">
+                                            <path
+                                                d="M12.1476 10.556C10.1409 10.0928 8.27428 9.68683 9.17845 7.97883C11.9318 2.78017 9.90762 0 7.00028 0C4.03695 0 2.06295 2.88633 4.82328 7.97883C5.75545 9.69733 3.81762 10.1022 1.85412 10.556C0.0621153 10.9702 -0.00555133 11.8603 0.000282001 13.4167L0.00261533 14H13.9979L14.0003 13.4342C14.0073 11.8662 13.9466 10.9725 12.1476 10.556Z"
+                                                fill="black" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_111_17">
+                                                <rect width="14" height="14" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <p>Login</p>
+                                </a>
+                            </div>
+                            <div class="search-box-hidden">
+                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13 11.7249L9.61242 8.36333C10.2494 7.4945 10.6264 6.42525 10.6264 5.27042C10.6264 2.36383 8.24308 0 5.31267 0C2.38333 0 0 2.36492 0 5.27042C0 8.177 2.38333 10.5408 5.31267 10.5408C6.38126 10.5425 7.42554 10.222 8.30917 9.62108L11.7152 13L13 11.7249ZM1.55783 5.27042C1.55783 3.21642 3.24242 1.54483 5.31375 1.54483C7.38292 1.54483 9.06858 3.21642 9.06858 5.27042C9.06858 7.32442 7.384 8.99492 5.31375 8.99492C3.24242 8.99492 1.55783 7.32442 1.55783 5.27042Z"
+                                        fill="black" />
+                                </svg>
+
+                                <input type="text" placeholder="Search">
+                            </div>
+                            <ul class="ul-hidden">
+                                <li class="border-top">
+                                    <a href="../FindAGym/index.html">Find a Gym</a>
+                                </li>
+                                <li>
+                                    <a href="../Classes/index.html">Classes</a>
+                                </li>
+                                <li>
+                                    <a href="../PersonalTraining/index.html">Personal Training</a>
+                                </li>
+                                <li>
+                                    <a href="../FFXOnDemand/index.html">FFX On Demand</a>
+                                </li>
+                                <li>
+                                    <a href="../Blog/index.html">Blog</a>
+                                </li>
+                            </ul>
+                            <div class="container-btn">
+                                <a class="btn btn-book-hidden" href="../BookAVisit/index.html">
+                                    <p>Book a visit</p>
+                                </a>
+                            </div>
+                            <div class="container-btn">
+                                <a href="../Join/index.html" class="btn">
+                                    <p>Join now</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header2" id="navbar">
+        <div class="wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="primary-header">
+                            <div class="logo">
+                                <a href="../index.html">
+                                    <img src="../image/1x1-00000000.png" data-src="../image/logo.svg" alt="logo">
+                                </a>
+                            </div>
+                            <div class="primary-navbar">
+                                <div class="navbar">
+                                    <ul id="ul-navbar">
+                                        <li class="nav-item">
+                                            <a href="../FindAGym/index.html">
+                                                Find a Gym
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="../Classes/index.html">
+                                                Classes
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="../PersonalTraining/index.html">
+                                                Personal Training
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="../FFXOnDemand/index.html">
+                                                FFX On Demand
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="../Blog/index.html">
+                                                Blog
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-group-button">
+                                    <a class="book-visit btn" href="../BookAVisit/index.html">
+                                        <p>Book a visit</p>
+                                    </a>
+                                    <a class="join-now btn" href="../Join/index.html">
+                                        <p>Join now</p>
+                                    </a>
+                                </div>
+                                <div class="responsive-navbar">
+                                    <a class="btn" href="../Join/index.html">
+                                        <p>Join now</p>
+                                    </a>
+                                    <button type="button" id="primary-nav-trigger" name="nav-bar" title="navbar">
+                                        <span class="bar top"></span>
+                                        <span class="bar middle"></span>
+                                        <span class="bar bottom"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="search-hidden">
+                                <div class="search-form">
+                                    <div class="search">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_112_29)">
+                                                <path
+                                                    d="M20 18.0383L14.7883 12.8667C15.7683 11.53 16.3483 9.885 16.3483 8.10833C16.3483 3.63667 12.6817 0 8.17333 0C3.66667 0 0 3.63833 0 8.10833C0 12.58 3.66667 16.2167 8.17333 16.2167C9.81732 16.2193 11.4239 15.7261 12.7833 14.8017L18.0233 20L20 18.0383ZM2.39667 8.10833C2.39667 4.94833 4.98833 2.37667 8.175 2.37667C11.3583 2.37667 13.9517 4.94833 13.9517 8.10833C13.9517 11.2683 11.36 13.8383 8.175 13.8383C4.98833 13.8383 2.39667 11.2683 2.39667 8.10833Z"
+                                                    fill="black" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_112_29">
+                                                    <rect width="20" height="20" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <input type="text" placeholder="Search">
+                                    </div>
+                                    <div class="btn">
+                                        <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M18.513 0 11.57 6.943 4.628 0 0 4.629l6.943 6.941L0 18.513l4.628 4.629 6.942-6.943 6.943 6.943 4.629-4.629-6.943-6.943 6.943-6.941L18.513 0Z"
+                                                fill="#5D5D5C" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-header">
+        <div class="wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="container-title">
+                            <p class="classes">CLASSES AT</p>
+                            <h1 class="title">London Angel</h1>
+                            <p class="change-club">Change club
+                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_121_35)">
+                                        <path d="M0.857147 0.857178L6 6.00003L11.1429 0.857178" stroke="white"
+                                            stroke-width="2" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_121_35">
+                                            <rect width="12" height="7.71429" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav-bar">
+        <div class="wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="container-filter">
+                            <div class="filter">
+                                <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="ft-icon">
+                                    <path d="M5 19v-7M5 8V1M15 19v-9M15 6V1M2 12h6M12 6h6" stroke="#000"
+                                        stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+                                </svg>
+                                <p>Filter by</p>
+                            </div>
+                            <div class="goal shared-style">
+                                <svg width="14" height="9" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="chevron">
+                                    <path d="m1 1 6 6 6-6" stroke="#000" stroke-width="2" />
+                                </svg>
+                                <p>Goal</p>
+                            </div>
+                            <div class="container-list">
+                                <ul class="ul-list">
+                                    <li class="item-list">Get Stronger</li>
+                                    <li class="item-list">Get Fitter</li>
+                                    <li class="item-list">Get Leaner</li>
+                                    <li class="item-list">Get More Definition</li>
+                                    <li class="item-list">Move Better</li>
+                                </ul>
+                                <div class="closeBtn btn">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.4 0.500016L11.8 6.10002L10.1 7.80002L8.5 6.30002L8.1 5.80002L2.6 0.300016C2 -0.0999844 1.1 -0.0999844 0.500003 0.500016C-0.099997 1.10002 -0.099997 2.00002 0.500003 2.60002L5.8 8.00002L6.3 8.50002L7.8 10L6.3 11.5L5.8 12L0.500003 17.5C-0.099997 18.1 -0.099997 19 0.500003 19.6C1.1 20.2 2 20.2 2.6 19.6L8.1 14.1L8.4 13.6L9.9 12.1L11.4 13.6L17.4 19.5C18 20.1 18.9 20.1 19.5 19.5C20.1 18.9 20.1 18 19.5 17.4L13.9 11.8L12.1 10L13.6 8.50002L19.6 2.60002C20.2 2.00002 20.2 1.10002 19.6 0.500016C18.9 -0.0999844 17.9 -0.0999844 17.4 0.500016Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="duration shared-style">
+                                <svg width="14" height="9" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="chevron">
+                                    <path d="m1 1 6 6 6-6" stroke="#000" stroke-width="2" />
+                                </svg>
+                                <p>Duration</p>
+                            </div>
+                            <div class="container-list">
+                                <ul class="ul-list">
+                                    <li class="item-list">30 mins</li>
+                                    <li class="item-list">45 mins</li>
+                                    <li class="item-list">1 Hour</li>
+                                </ul>
+                                <div class="closeBtn btn">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.4 0.500016L11.8 6.10002L10.1 7.80002L8.5 6.30002L8.1 5.80002L2.6 0.300016C2 -0.0999844 1.1 -0.0999844 0.500003 0.500016C-0.099997 1.10002 -0.099997 2.00002 0.500003 2.60002L5.8 8.00002L6.3 8.50002L7.8 10L6.3 11.5L5.8 12L0.500003 17.5C-0.099997 18.1 -0.099997 19 0.500003 19.6C1.1 20.2 2 20.2 2.6 19.6L8.1 14.1L8.4 13.6L9.9 12.1L11.4 13.6L17.4 19.5C18 20.1 18.9 20.1 19.5 19.5C20.1 18.9 20.1 18 19.5 17.4L13.9 11.8L12.1 10L13.6 8.50002L19.6 2.60002C20.2 2.00002 20.2 1.10002 19.6 0.500016C18.9 -0.0999844 17.9 -0.0999844 17.4 0.500016Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_112_29)">
+                                    <path
+                                        d="M17 15.3326L12.5701 10.9367C13.4031 9.8005 13.8961 8.40225 13.8961 6.89208C13.8961 3.09117 10.7794 0 6.94733 0C3.11667 0 0 3.09258 0 6.89208C0 10.693 3.11667 13.7842 6.94733 13.7842C8.34472 13.7864 9.71032 13.3672 10.8658 12.5814L15.3198 17L17 15.3326ZM2.03717 6.89208C2.03717 4.20608 4.24008 2.02017 6.94875 2.02017C9.65458 2.02017 11.8589 4.20608 11.8589 6.89208C11.8589 9.57808 9.656 11.7626 6.94875 11.7626C4.24008 11.7626 2.03717 9.57808 2.03717 6.89208Z"
+                                        fill="black" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_112_29">
+                                        <rect width="17" height="17" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <input type="text" placeholder="Search all classes">
+                        </div>
+                        <div class="nav-link">
+                            <div class="class-list shared-class">
+                                <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke="#d70926" stroke-width="2"
+                                        d="M0 1h3M0 10h3M0 19h3M5 1h15M5 10h15M5 19h15" />
+                                </svg>
+                                <p><span>Class</span> List</p>
+                            </div>
+                            <div class="timetable shared-class">
+                                <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 19h18V1H1v18ZM0 7h18M7 20v-7M7 13V1M13 20V0M0 13h19" stroke="#000000"
+                                        stroke-width="2" />
+                                </svg>
+                                <p><span>Class</span> Timetable</p>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav-bar-hidden">
+        <div class="wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="nav-link">
+                            <div class="shared-class">List</div>
+                            <div class="shared-class">Timetable</div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="search">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_112_29)">
+                                    <path
+                                        d="M17 15.3326L12.5701 10.9367C13.4031 9.8005 13.8961 8.40225 13.8961 6.89208C13.8961 3.09117 10.7794 0 6.94733 0C3.11667 0 0 3.09258 0 6.89208C0 10.693 3.11667 13.7842 6.94733 13.7842C8.34472 13.7864 9.71032 13.3672 10.8658 12.5814L15.3198 17L17 15.3326ZM2.03717 6.89208C2.03717 4.20608 4.24008 2.02017 6.94875 2.02017C9.65458 2.02017 11.8589 4.20608 11.8589 6.89208C11.8589 9.57808 9.656 11.7626 6.94875 11.7626C4.24008 11.7626 2.03717 9.57808 2.03717 6.89208Z"
+                                        fill="black" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_112_29">
+                                        <rect width="17" height="17" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <input type="text" placeholder="Search all classes">
+                        </div>
+                        <div class="container-filter">
+                            <div class="filter">
+                                <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="ft-icon">
+                                    <path d="M5 19v-7M5 8V1M15 19v-9M15 6V1M2 12h6M12 6h6" stroke="#000"
+                                        stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+                                </svg>
+                                <p>Filter by</p>
+                            </div>
+                            <div class="title shared-style">
+                                <p>Goal</p>
+                            </div>
+                            <div class="container-list">
+                                <div class="contain-title-list">
+                                    <p class="title-list">Filter by Goal</p>
+                                    <div class="closeBtn">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M17.4 0.500016L11.8 6.10002L10.1 7.80002L8.5 6.30002L8.1 5.80002L2.6 0.300016C2 -0.0999844 1.1 -0.0999844 0.500003 0.500016C-0.099997 1.10002 -0.099997 2.00002 0.500003 2.60002L5.8 8.00002L6.3 8.50002L7.8 10L6.3 11.5L5.8 12L0.500003 17.5C-0.099997 18.1 -0.099997 19 0.500003 19.6C1.1 20.2 2 20.2 2.6 19.6L8.1 14.1L8.4 13.6L9.9 12.1L11.4 13.6L17.4 19.5C18 20.1 18.9 20.1 19.5 19.5C20.1 18.9 20.1 18 19.5 17.4L13.9 11.8L12.1 10L13.6 8.50002L19.6 2.60002C20.2 2.00002 20.2 1.10002 19.6 0.500016C18.9 -0.0999844 17.9 -0.0999844 17.4 0.500016Z"
+                                                fill="white" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <ul class="ul-list">
+                                    <li class="item-list bd-top">Get Stronger
+                                        <div class="checkbox">
+                                            <svg width="13" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M4.875 6.697 2.012 3.795 0 5.947 4.875 11 13 2.15 10.988 0 4.875 6.697Z"
+                                                    fill="#fff" />
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="item-list">Get Fitter
+                                        <div class="checkbox">
+                                            <svg width="13" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M4.875 6.697 2.012 3.795 0 5.947 4.875 11 13 2.15 10.988 0 4.875 6.697Z"
+                                                    fill="#fff" />
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="item-list">Get Leaner
+                                        <div class="checkbox">
+                                            <svg width="13" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M4.875 6.697 2.012 3.795 0 5.947 4.875 11 13 2.15 10.988 0 4.875 6.697Z"
+                                                    fill="#fff" />
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="item-list">Get More Definition
+                                        <div class="checkbox">
+                                            <svg width="13" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M4.875 6.697 2.012 3.795 0 5.947 4.875 11 13 2.15 10.988 0 4.875 6.697Z"
+                                                    fill="#fff" />
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="item-list">Move Better
+                                        <div class="checkbox">
+                                            <svg width="13" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M4.875 6.697 2.012 3.795 0 5.947 4.875 11 13 2.15 10.988 0 4.875 6.697Z"
+                                                    fill="#fff" />
+                                            </svg>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btn applyBtn">
+                                    <p>Apply</p>
+                                </div>
+                                <div class="btn clearBtn">
+                                    <p>Clear</p>
+                                </div>
+                            </div>
+                            <div class="title shared-style">
+                                <p>Duration</p>
+                            </div>
+                            <div class="container-list">
+                                <div class="contain-title-list">
+                                    <p class="title-list">Filter by Duration </p>
+                                    <div class="closeBtn">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M17.4 0.500016L11.8 6.10002L10.1 7.80002L8.5 6.30002L8.1 5.80002L2.6 0.300016C2 -0.0999844 1.1 -0.0999844 0.500003 0.500016C-0.099997 1.10002 -0.099997 2.00002 0.500003 2.60002L5.8 8.00002L6.3 8.50002L7.8 10L6.3 11.5L5.8 12L0.500003 17.5C-0.099997 18.1 -0.099997 19 0.500003 19.6C1.1 20.2 2 20.2 2.6 19.6L8.1 14.1L8.4 13.6L9.9 12.1L11.4 13.6L17.4 19.5C18 20.1 18.9 20.1 19.5 19.5C20.1 18.9 20.1 18 19.5 17.4L13.9 11.8L12.1 10L13.6 8.50002L19.6 2.60002C20.2 2.00002 20.2 1.10002 19.6 0.500016C18.9 -0.0999844 17.9 -0.0999844 17.4 0.500016Z"
+                                                fill="white" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <ul class="ul-list">
+                                    <li class="item-list bd-top">30 mins
+                                        <div class="checkbox">
+                                            <svg width="13" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M4.875 6.697 2.012 3.795 0 5.947 4.875 11 13 2.15 10.988 0 4.875 6.697Z"
+                                                    fill="#fff" />
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="item-list">45 mins
+                                        <div class="checkbox">
+                                            <svg width="13" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M4.875 6.697 2.012 3.795 0 5.947 4.875 11 13 2.15 10.988 0 4.875 6.697Z"
+                                                    fill="#fff" />
+                                            </svg>
+                                        </div>
+                                    </li>
+                                    <li class="item-list">1 Hour
+                                        <div class="checkbox">
+                                            <svg width="13" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M4.875 6.697 2.012 3.795 0 5.947 4.875 11 13 2.15 10.988 0 4.875 6.697Z"
+                                                    fill="#fff" />
+                                            </svg>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btn applyBtn">
+                                    <p>Apply</p>
+                                </div>
+                                <div class="btn clearBtn">
+                                    <p>Clear</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-container">
+        <div class="wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs 12 col-md-6">
+                        <div class="video">
+                            <video controls preload="none" class="iframe-video">
+                                <source src="../video/pexels-tima-miroshnichenko-5319759 (2160p).mp4" type="video/mp4">
+                            </video>
+                            <!-- <img src="../image/area/hero.jpg" alt="video" class="iframe-video"> -->
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="experience">
+                            <p class="title">Experience classes at Fitness First</p>
+                            <p class="text1">Whether you want to get leaner, stronger, faster, or just have fun while
+                                working out, we have something for everyone with our group Fitness Classes. There are 55
+                                classes for you to try out across five different categories, including
+                                <span class="redtext">Strength</span>, <span class="redtext">Cardio</span>,
+                                <span class="redtext">Fight</span>, <span class="redtext">Cycle</span> and <span
+                                    class="redtext">Mind & Body</span>.
+                            </p>
+                            <p class="text1">
+                                Our classes are designed with your training in mind incorporating the
+                                latest fitness trends so you can have fun whilst working out with like-minded members!
+                            </p>
+                            <p class="text2">
+                                And, of course, our team of expert instructors are dedicated to creating a fun and
+                                supportive community, motivating you to reach your fitness goals.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popular-classes">
+        <div class="wrap">
+            <div class="container-fluid">
+                <div class="row header-popular">
+                    <div class="col-xs-12 col-sm-8 col-md-8">
+                        <p class="title-popular">POPULAR CLASSES</p>
+                    </div>
+                    <div class="col-xs-0 col-sm-4 col-md-4">
+                        <div class="group-button">
+                            <div class="nextBtn btn">
+                                <svg width="13" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m2 2 8 8-8 8" stroke="#000" stroke-width="4" />
+                                </svg>
+                            </div>
+                            <div class="prevBtn btn">
+                                <svg width="13" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m11 2-8 8 8 8" stroke="#000" stroke-width="4" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popular-slider">
+        <div class="wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="popular-card">
+                                    <a class="img" href="../ClassesDetail/index.html">
+                                        <img src="../image/1x1-00000000.png" data-src="../image/popular/hero.jpg"
+                                            alt="popular-card">
+                                    </a>
+                                    <div class="card-content">
+                                        <div class="name">
+                                            <p>Spin</p>
+                                        </div>
+                                        <div class="chosen">
+                                            <div class="view">
+                                                <p>View class</p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15"
+                                                    style="enable-background:new 0 0 20 15" xml:space="preserve">
+                                                    <path style="fill:#5d5d5c"
+                                                        d="m12.57 14.92-1.45-1.45 4.93-4.94H0V6.47h16.05l-4.93-4.94L12.57.08l6.7 6.69.73.73-.73.73z" />
+                                                </svg>
+                                            </div>
+                                            <div class="book">
+                                                <p>Book class</p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15"
+                                                    style="enable-background:new 0 0 20 15" xml:space="preserve">
+                                                    <path style="fill:#d70f28"
+                                                        d="m12.57 14.92-1.45-1.45 4.93-4.94H0V6.47h16.05l-4.93-4.94L12.57.08l6.7 6.69.73.73-.73.73z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="popular-card">
+                                    <div class="img">
+                                        <img src="../image/1x1-00000000.png" data-src="../image/popular/glute-gains.jpg"
+                                            alt="popular-card">
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="name">
+                                            <p>Glute Gains</p>
+                                        </div>
+                                        <div class="chosen">
+                                            <div class="view">
+                                                <p>View class</p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15"
+                                                    style="enable-background:new 0 0 20 15" xml:space="preserve">
+                                                    <path style="fill:#5d5d5c"
+                                                        d="m12.57 14.92-1.45-1.45 4.93-4.94H0V6.47h16.05l-4.93-4.94L12.57.08l6.7 6.69.73.73-.73.73z" />
+                                                </svg>
+                                            </div>
+                                            <div class="book">
+                                                <p>Book class</p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15"
+                                                    style="enable-background:new 0 0 20 15" xml:space="preserve">
+                                                    <path style="fill:#d70f28"
+                                                        d="m12.57 14.92-1.45-1.45 4.93-4.94H0V6.47h16.05l-4.93-4.94L12.57.08l6.7 6.69.73.73-.73.73z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="popular-card">
+                                    <div class="img">
+                                        <img src="../image/1x1-00000000.png"
+                                            data-src="../image/popular/fitnessfirst_gracechurch_260521_0917.jpg"
+                                            alt="popular-card">
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="name">
+                                            <p>Bootcamp</p>
+                                        </div>
+                                        <div class="chosen">
+                                            <div class="view">
+                                                <p>View class</p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15"
+                                                    style="enable-background:new 0 0 20 15" xml:space="preserve">
+                                                    <path style="fill:#5d5d5c"
+                                                        d="m12.57 14.92-1.45-1.45 4.93-4.94H0V6.47h16.05l-4.93-4.94L12.57.08l6.7 6.69.73.73-.73.73z" />
+                                                </svg>
+                                            </div>
+                                            <div class="book">
+                                                <p>Book class</p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15"
+                                                    style="enable-background:new 0 0 20 15" xml:space="preserve">
+                                                    <path style="fill:#d70f28"
+                                                        d="m12.57 14.92-1.45-1.45 4.93-4.94H0V6.47h16.05l-4.93-4.94L12.57.08l6.7 6.69.73.73-.73.73z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="popular-card">
+                                    <div class="img">
+                                        <img src="../image/1x1-00000000.png" data-src="../image/popular/rush.jpg"
+                                            alt="popular-card">
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="name">
+                                            <p>FF HIIIT</p>
+                                        </div>
+                                        <div class="chosen">
+                                            <div class="view">
+                                                <p>View class</p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15"
+                                                    style="enable-background:new 0 0 20 15" xml:space="preserve">
+                                                    <path style="fill:#5d5d5c"
+                                                        d="m12.57 14.92-1.45-1.45 4.93-4.94H0V6.47h16.05l-4.93-4.94L12.57.08l6.7 6.69.73.73-.73.73z" />
+                                                </svg>
+                                            </div>
+                                            <div class="book">
+                                                <p>Book class</p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15"
+                                                    style="enable-background:new 0 0 20 15" xml:space="preserve">
+                                                    <path style="fill:#d70f28"
+                                                        d="m12.57 14.92-1.45-1.45 4.93-4.94H0V6.47h16.05l-4.93-4.94L12.57.08l6.7 6.69.73.73-.73.73z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="popular-card">
+                                    <div class="img">
+                                        <img src="../image/1x1-00000000.png"
+                                            data-src="../image/popular/fitnessfirst-w21-bakerst-1064-3.jpg"
+                                            alt="popular-card">
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="name">
+                                            <p>RoX</p>
+                                        </div>
+                                        <div class="chosen">
+                                            <div class="view">
+                                                <p>View class</p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15"
+                                                    style="enable-background:new 0 0 20 15" xml:space="preserve">
+                                                    <path style="fill:#5d5d5c"
+                                                        d="m12.57 14.92-1.45-1.45 4.93-4.94H0V6.47h16.05l-4.93-4.94L12.57.08l6.7 6.69.73.73-.73.73z" />
+                                                </svg>
+                                            </div>
+                                            <div class="book">
+                                                <p>Book class</p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15"
+                                                    style="enable-background:new 0 0 20 15" xml:space="preserve">
+                                                    <path style="fill:#d70f28"
+                                                        d="m12.57 14.92-1.45-1.45 4.93-4.94H0V6.47h16.05l-4.93-4.94L12.57.08l6.7 6.69.73.73-.73.73z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="popular-card">
+                                    <div class="img">
+                                        <img src="../image/1x1-00000000.png" data-src="../image/popular/yoga_yoga.jpg"
+                                            alt="popular-card">
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="name">
+                                            <p>Yoga</p>
+                                        </div>
+                                        <div class="chosen">
+                                            <div class="view">
+                                                <p>View class</p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15"
+                                                    style="enable-background:new 0 0 20 15" xml:space="preserve">
+                                                    <path style="fill:#5d5d5c"
+                                                        d="m12.57 14.92-1.45-1.45 4.93-4.94H0V6.47h16.05l-4.93-4.94L12.57.08l6.7 6.69.73.73-.73.73z" />
+                                                </svg>
+                                            </div>
+                                            <div class="book">
+                                                <p>Book class</p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15"
+                                                    style="enable-background:new 0 0 20 15" xml:space="preserve">
+                                                    <path style="fill:#d70f28"
+                                                        d="m12.57 14.92-1.45-1.45 4.93-4.94H0V6.47h16.05l-4.93-4.94L12.57.08l6.7 6.69.73.73-.73.73z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="popular-card">
+                                    <div class="img">
+                                        <img src="../image/1x1-00000000.png" data-src="../image/popular/pilates.jpg"
+                                            alt="popular-card">
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="name">
+                                            <p>Pilates</p>
+                                        </div>
+                                        <div class="chosen">
+                                            <div class="view">
+                                                <p>View class</p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15"
+                                                    style="enable-background:new 0 0 20 15" xml:space="preserve">
+                                                    <path style="fill:#5d5d5c"
+                                                        d="m12.57 14.92-1.45-1.45 4.93-4.94H0V6.47h16.05l-4.93-4.94L12.57.08l6.7 6.69.73.73-.73.73z" />
+                                                </svg>
+                                            </div>
+                                            <div class="book">
+                                                <p>Book class</p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15"
+                                                    style="enable-background:new 0 0 20 15" xml:space="preserve">
+                                                    <path style="fill:#d70f28"
+                                                        d="m12.57 14.92-1.45-1.45 4.93-4.94H0V6.47h16.05l-4.93-4.94L12.57.08l6.7 6.69.73.73-.73.73z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="popular-card">
+                                    <div class="img">
+                                        <img src="../image/1x1-00000000.png" data-src="../image/popular/hero1.jpg"
+                                            alt="popular-card">
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="name">
+                                            <p>TraX</p>
+                                        </div>
+                                        <div class="chosen">
+                                            <div class="view">
+                                                <p>View class</p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15"
+                                                    style="enable-background:new 0 0 20 15" xml:space="preserve">
+                                                    <path style="fill:#5d5d5c"
+                                                        d="m12.57 14.92-1.45-1.45 4.93-4.94H0V6.47h16.05l-4.93-4.94L12.57.08l6.7 6.69.73.73-.73.73z" />
+                                                </svg>
+                                            </div>
+                                            <div class="book">
+                                                <p>Book class</p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15"
+                                                    style="enable-background:new 0 0 20 15" xml:space="preserve">
+                                                    <path style="fill:#d70f28"
+                                                        d="m12.57 14.92-1.45-1.45 4.93-4.94H0V6.47h16.05l-4.93-4.94L12.57.08l6.7 6.69.73.73-.73.73z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="our-areas">
+        <div class="wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8">
+                        <p class="title">OUR 5 AREAS</p>
+                        <p class="text">Our classes are designed with your training in mind incorporating the latest
+                            fitness trends
+                            so you can have fun whilst working out with like-minded members!</p>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="cover-btn">
+                            <div class="btn">
+                                <p>View all classes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="our-areas-image">
+        <div class="wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="area-card pt32">
+                            <div class="card-img">
+                                <div class="animate"></div>
+                                <img src="../image/1x1-00000000.png" data-src="../image/area/hero.jpg" alt="areas-card">
+                            </div>
+                            <div class="area-card-content">
+                                <div class="area-card-info">
+                                    <p class="name">Cardio</p>
+                                    <p class="number-classes">(1 class)</p>
+                                </div>
+                                <div class="view">
+                                    <p>View class</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15"
+                                        style="enable-background:new 0 0 20 15" xml:space="preserve">
+                                        <path style="fill:#5d5d5c"
+                                            d="m12.57 14.92-1.45-1.45 4.93-4.94H0V6.47h16.05l-4.93-4.94L12.57.08l6.7 6.69.73.73-.73.73z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="area-card pt32">
+                            <div class="card-img">
+                                <div class="animate"></div>
+                                <img src="../image/1x1-00000000.png" data-src="../image/area/_jhs1259-copy.jpg"
+                                    alt="areas-card">
+                            </div>
+                            <div class="area-card-content">
+                                <div class="area-card-info">
+                                    <p class="name">Strength</p>
+                                    <p class="number-classes">(5 classes)</p>
+                                </div>
+                                <div class="view">
+                                    <p>View class</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15"
+                                        style="enable-background:new 0 0 20 15" xml:space="preserve">
+                                        <path style="fill:#5d5d5c"
+                                            d="m12.57 14.92-1.45-1.45 4.93-4.94H0V6.47h16.05l-4.93-4.94L12.57.08l6.7 6.69.73.73-.73.73z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="area-card pt32">
+                            <div class="card-img">
+                                <div class="animate"></div>
+                                <img src="../image/1x1-00000000.png"
+                                    data-src="../image/area/fitnessfirst-w21-bakerst-2436.jpg" alt="areas-card">
+                            </div>
+                            <div class="area-card-content">
+                                <div class="area-card-info">
+                                    <p class="name">Cycle</p>
+                                    <p class="number-classes">(1 class)</p>
+                                </div>
+                                <div class="view">
+                                    <p>View class</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15"
+                                        style="enable-background:new 0 0 20 15" xml:space="preserve">
+                                        <path style="fill:#5d5d5c"
+                                            d="m12.57 14.92-1.45-1.45 4.93-4.94H0V6.47h16.05l-4.93-4.94L12.57.08l6.7 6.69.73.73-.73.73z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="area-card pt32">
+                            <div class="card-img">
+                                <div class="animate"></div>
+                                <img src="../image/1x1-00000000.png" data-src="../image/area/meditation.jpg"
+                                    alt="areas-card">
+                            </div>
+                            <div class="area-card-content">
+                                <div class="area-card-info">
+                                    <p class="name">Mind and Body</p>
+                                    <p class="number-classes">(2 classes)</p>
+                                </div>
+                                <div class="view">
+                                    <p>View class</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15"
+                                        style="enable-background:new 0 0 20 15" xml:space="preserve">
+                                        <path style="fill:#5d5d5c"
+                                            d="m12.57 14.92-1.45-1.45 4.93-4.94H0V6.47h16.05l-4.93-4.94L12.57.08l6.7 6.69.73.73-.73.73z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="area-card pt32">
+                            <div class="card-img">
+                                <div class="animate"></div>
+                                <img src="../image/1x1-00000000.png"
+                                    data-src="../image/area/fitnessfirst-w21-bakerst-1064-3.webp" alt="areas-card">
+                            </div>
+                            <div class="area-card-content">
+                                <div class="area-card-info">
+                                    <p class="name">Fight</p>
+                                    <p class="number-classes">(6 classes)</p>
+                                </div>
+                                <div class="view">
+                                    <p>View class</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15"
+                                        style="enable-background:new 0 0 20 15" xml:space="preserve">
+                                        <path style="fill:#5d5d5c"
+                                            d="m12.57 14.92-1.45-1.45 4.93-4.94H0V6.47h16.05l-4.93-4.94L12.57.08l6.7 6.69.73.73-.73.73z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block-text block-text-head">
+        <div class="wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2 class="title">Five areas of fitness</h2>
+                        <p class="text">
+                            Our fitness classes are grouped into five areas to help you achieve your fitness goals in a
+                            way that works for you. Whether you're looking to improve overall fitness, build strength
+                            and muscle, or train your mind and body, we have a range of classes to suit all levels and
+                            preferences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block-text">
+        <div class="wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3 class="title">Cardio</h3>
+                        <p class="text">
+                            For a challenging and high-energy workout which helps to improve your cardiovascular fitness
+                            and endurance, our <span class="red-text">Cardio classes</span> are a perfect choice. These
+                            classes are designed to elevate your heart rate, helping you to burn calories and improve
+                            your overall fitness.
+                        </p>
+                        <p class="text">
+                            One of our most popular cardio classes is <span class="red-text">HIIT</span> (high-intensity
+                            interval training). It involves periods of intense exercise with rests in between —
+                            excellent for taking your fitness and fat loss goals to the next level!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block-text">
+        <div class="wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3 class="title">Cycle</h3>
+                        <p class="text">
+                            Our group <span class="red-text">Cycle classes</span> are designed to get your heart pumping
+                            and improve your overall fitness and endurance.
+                        </p>
+                        <p class="text">
+                            Our <span class="red-text">Spin</span> class is one of our most popular — a high-intensity,
+                            low-impact workout using indoor stationary bikes. You’re sure to work up a sweat!
+                        </p>
+                        <p class="text">
+                            Or, get ready for <span class="red-text">Rhyde</span>, a workout that trains your mind and
+                            body with a dance-inspired cycle class. It combines cycling with upper body conditioning and
+                            mindfulness to create a fun and immersive experience!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block-text">
+        <div class="wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3 class="title">Strength</h3>
+                        <p class="text">
+                            <span class="red-text">Strength classes</span> are all about getting strong and building
+                            those muscles. You’ll use all sorts of equipment like dumbbells, kettlebells, and even your
+                            own body weight to perform exercises like squats and pushups.
+                        </p>
+                        <p class="text">
+                            And don’t worry if you’re new to this — our Strength classes are open to all fitness levels,
+                            and our instructors will help you perfect your technique and form.
+                        </p>
+                        <p class="text">
+                            Discover popular classes like <span class="red-text">SHRED</span>, which combines lifting
+                            with HIIT training to burn calories and build muscle and, <span class="red-text">Glute
+                                Gains</span>, a session focused on controlled movements that engage your lower body
+                            muscles and core!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block-text">
+        <div class="wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3 class="title">Mind & Body</h3>
+                        <p class="text">
+                            Improve both your mental and physical well-being with <span class="red-text">Mind and Body
+                                classesMind and Body classes</span> at Fitness First. Classes like <span
+                                class="red-text">Pilates</span> and <span class="red-text">Yoga</span> are a great way
+                            to increase your flexibility and overall strength while helping to reduce stress and
+                            anxiety.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block-text block-text-foot">
+        <div class="wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3 class="title">Fight</h3>
+                        <p class="text">
+                            Our <span class="red-text">Fight</span> classes are an excellent way to improve your
+                            strength, agility and endurance. These stress-busting sessions are a popular choice for
+                            those wanting to break a sweat and learn something new.
+                        </p>
+                        <p class="text mg-0">
+                            Choose from different classes, including <span class="red-text">Boxercise</span> — a session
+                            based on boxer training methods — which involves hitting focus pads. Or, learn various
+                            martial arts techniques, moves, kicks, and twists with our <span class="red-text">Self
+                                Defense</span> sessions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block-icon">
+        <div class="wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="wc">
+                            <div class="icon-world">
+                                <img src="../image/1x1-00000000.png" data-src="../image/svg/world-class.svg" alt="icon">
+                            </div>
+                            <div class="text">
+                                <p class="title">World class instructors</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="cw">
+                            <div class="icon-world">
+                                <img src="../image/1x1-00000000.png" data-src="../image/svg/pin.svg" alt="icon">
+                            </div>
+                            <div class="text">
+                                <p class="title">Classes wherever you are</p>
+                                <p class="text-content">
+                                    Attend classes at multiple gyms and online 24/7 through FFX On Demand
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="title-footer">
+            <div class="wrap">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>PUT YOUR FITNESS FIRST</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="wrap">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="tag-list">
+                                <p class="title-item">About us
+                                    <svg width="16" height="10" viewBox="0 0 16 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" class="chevron-footer">
+                                        <g clip-path="url(#clip0_106_4)">
+                                            <path d="M0 2.576L2.667 0L8 5L13.333 0L16 2.576L8 10L0 2.576Z"
+                                                fill="#EDEDEC" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_106_4">
+                                                <rect width="16" height="10" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <p class="child-item">About us</p>
+                                    </li>
+                                    <li>
+                                        <p class="child-item">Campaigns</p>
+                                    </li>
+                                    <li>
+                                        <p class="child-item">Student Discount</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="tag-list">
+                                <p class="title-item">Press and Careers
+                                    <svg width="16" height="10" viewBox="0 0 16 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" class="chevron-footer">
+                                        <g clip-path="url(#clip0_106_4)">
+                                            <path d="M0 2.576L2.667 0L8 5L13.333 0L16 2.576L8 10L0 2.576Z"
+                                                fill="#EDEDEC" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_106_4">
+                                                <rect width="16" height="10" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <p class="child-item">Press Room</p>
+                                    </li>
+                                    <li>
+                                        <p class="child-item">Careers</p>
+                                    </li>
+                                    <li>
+                                        <p class="child-item">Become A PT</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="tag-list">
+                                <p class="title-item">Our Gyms
+                                    <svg width="16" height="10" viewBox="0 0 16 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" class="chevron-footer">
+                                        <g clip-path="url(#clip0_106_4)">
+                                            <path d="M0 2.576L2.667 0L8 5L13.333 0L16 2.576L8 10L0 2.576Z"
+                                                fill="#EDEDEC" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_106_4">
+                                                <rect width="16" height="10" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <p class="child-item">Find a Gym</p>
+                                    </li>
+                                    <li>
+                                        <p class="child-item">Gyms in London</p>
+                                    </li>
+                                    <li>
+                                        <p class="child-item">Multi Club Access</p>
+                                    </li>
+                                    <li>
+                                        <p class="child-item">Our Facilities</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="wrap">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="tag-list">
+                                <p class="title-item">Customer Service
+                                    <svg width="16" height="10" viewBox="0 0 16 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" class="chevron-footer">
+                                        <g clip-path="url(#clip0_106_4)">
+                                            <path d="M0 2.576L2.667 0L8 5L13.333 0L16 2.576L8 10L0 2.576Z"
+                                                fill="#EDEDEC" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_106_4">
+                                                <rect width="16" height="10" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <p class="child-item">FAQ</p>
+                                    </li>
+                                    <li>
+                                        <p class="child-item">Contact us</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="tag-list">
+                                <p class="title-item">Membership
+                                    <svg width="16" height="10" viewBox="0 0 16 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" class="chevron-footer">
+                                        <g clip-path="url(#clip0_106_4)">
+                                            <path d="M0 2.576L2.667 0L8 5L13.333 0L16 2.576L8 10L0 2.576Z"
+                                                fill="#EDEDEC" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_106_4">
+                                                <rect width="16" height="10" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <p class="child-item">Join now</p>
+                                    </li>
+                                    <li>
+                                        <p class="child-item">Corporate Solutions and Membership</p>
+                                    </li>
+                                    <li>
+                                        <p class="child-item">Blue Light Card Discount</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="tag-list">
+                                <p class="title-item">Polices and Legal
+                                    <svg width="16" height="10" viewBox="0 0 16 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" class="chevron-footer">
+                                        <g clip-path="url(#clip0_106_4)">
+                                            <path d="M0 2.576L2.667 0L8 5L13.333 0L16 2.576L8 10L0 2.576Z"
+                                                fill="#EDEDEC" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_106_4">
+                                                <rect width="16" height="10" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <p class="child-item">Membership Terms and Conditions</p>
+                                    </li>
+                                    <li>
+                                        <p class="child-item">Health Pledge</p>
+                                    </li>
+                                    <li>
+                                        <p class="child-item">Gym Etiquette</p>
+                                    </li>
+                                    <li>
+                                        <p class="child-item">Policies</p>
+                                    </li>
+                                    <li>
+                                        <p class="child-item">Modern Slavery Act</p>
+                                    </li>
+                                    <li>
+                                        <p class="child-item">Gender Pay Gap 2023</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-payment">
+            <div class="wrap">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="payment">
+                                <div class="social-media">
+                                    <div class="twitter">
+                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_102_6)">
+                                                <path
+                                                    d="M25 3.18966C24.0584 3.67754 23.0642 4.00147 22.0471 4.15173C23.1156 3.40176 23.918 2.20349 24.3014 0.785354C23.2947 1.4943 22.1959 1.9927 21.0514 2.25949C20.5678 1.64958 19.9867 1.16437 19.3432 0.833207C18.6998 0.502043 18.0074 0.331799 17.3079 0.332768C14.47 0.332768 12.1864 3.06984 12.1864 6.42501C12.1864 6.90777 12.22 7.37156 12.305 7.81294C10.2734 7.69886 8.28397 7.07315 6.46461 5.976C4.64525 4.87886 3.03616 3.33454 1.74071 1.44225C1.283 2.37454 1.04078 3.4379 1.03929 4.52156C1.03929 6.63104 1.95357 8.50087 3.31571 9.58277C2.50552 9.55737 1.71188 9.30033 1 8.83277V8.90001C1 11.8595 2.77643 14.3173 5.10643 14.8836C4.66776 15.0211 4.21606 15.0886 3.76286 15.0845C3.43429 15.0845 3.10286 15.0621 2.79214 14.981C3.13149 16.1972 3.77359 17.2572 4.63076 18.0165C5.48793 18.7758 6.51839 19.1972 7.58143 19.2233C5.75898 20.9125 3.52433 21.8259 1.22643 21.8207C0.806429 21.8207 0.402857 21.7983 0 21.7371C2.27 23.4767 4.96071 24.4698 7.86286 24.4698C17.2936 24.4698 22.45 15.1862 22.45 7.13966C22.45 6.86984 22.4429 6.61035 22.4314 6.3526C23.4399 5.49562 24.3103 4.42376 25 3.18966Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_102_6">
+                                                    <rect width="25" height="25" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+
+                                    </div>
+                                    <div class="facebook">
+                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_102_8)">
+                                                <path
+                                                    d="M23.6196 0.344604H1.37946C0.617857 0.344604 0 0.961294 0 1.72429V23.9649C0 24.727 0.617857 25.3446 1.37946 25.3446H13.3527V15.6637H10.0955V11.8895H13.3527V9.10789C13.3527 5.87907 15.3241 4.12067 18.2054 4.12067C19.5857 4.12067 20.7705 4.22345 21.1161 4.26882V7.64302L19.1179 7.64395C17.5509 7.64395 17.2491 8.38842 17.2491 9.48105V11.8895H20.9857L20.4973 15.6628H17.25V25.3446H23.6196C24.3821 25.3446 25.0009 24.7261 25.0009 23.9649V1.72429C25.0009 0.96222 24.3821 0.344604 23.6196 0.344604Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_102_8">
+                                                    <rect width="25" height="25" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="instagram">
+                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_102_5)">
+                                                <path
+                                                    d="M24.9143 7.34464C24.8554 6.01786 24.6411 5.10446 24.3339 4.31429C24.0201 3.47869 23.5266 2.72219 22.8884 2.09821C22.2645 1.46428 21.5106 0.973229 20.6786 0.658929C19.8839 0.351786 18.9759 0.136607 17.6482 0.0785714C16.3098 0.0142857 15.8857 0 12.4937 0C9.10179 0 8.67768 0.0142857 7.34464 0.0732143C6.01786 0.132143 5.10446 0.346429 4.31429 0.653571C3.47875 0.96709 2.72225 1.46025 2.09821 2.09821C1.46411 2.72262 0.973051 3.47718 0.658929 4.30982C0.351786 5.10446 0.136607 6.0125 0.0785714 7.34018C0.0142857 8.67768 0 9.10179 0 12.4938C0 15.8857 0.0142857 16.3098 0.0732143 17.642C0.132143 18.9696 0.346429 19.883 0.653571 20.6732C0.968973 21.5078 1.46188 22.2639 2.09821 22.8893C2.72321 23.5232 3.47946 24.0161 4.30982 24.3286C5.10446 24.6357 6.0125 24.8509 7.34018 24.9089C8.67232 24.9679 9.09732 24.9821 12.4893 24.9821C15.8804 24.9821 16.3054 24.9679 17.6375 24.9089C18.9652 24.8509 19.8777 24.6357 20.6679 24.3286C21.4983 24.0076 22.2525 23.5166 22.8822 22.8872C23.5118 22.2577 24.0029 21.5036 24.3241 20.6732C24.6312 19.8777 24.8455 18.9696 24.9045 17.642C24.9634 16.3098 24.9777 15.8857 24.9777 12.4938C24.9777 9.10179 24.9723 8.67768 24.9143 7.34464ZM22.6643 17.5446C22.6107 18.7652 22.4054 19.4241 22.2357 19.8634C22.0274 20.4022 21.7087 20.8914 21.3002 21.2998C20.8916 21.7082 20.4022 22.0267 19.8634 22.2348C19.4241 22.4054 18.7598 22.6098 17.5446 22.6634C16.2268 22.7232 15.8321 22.7375 12.4991 22.7375C9.16518 22.7375 8.76518 22.7232 7.45268 22.6643C6.23214 22.6107 5.57321 22.4054 5.13393 22.2357C4.59162 22.0365 4.1012 21.7175 3.69911 21.3027C3.28592 20.8996 2.96779 20.4094 2.76786 19.8679C2.59732 19.4286 2.39286 18.7652 2.33929 17.55C2.28036 16.2321 2.26518 15.8366 2.26518 12.5036C2.26518 9.17054 2.28036 8.76964 2.33839 7.45714C2.39196 6.2375 2.59732 5.57857 2.76786 5.13929C2.96693 4.59582 3.28759 4.10504 3.70536 3.70446C4.10982 3.28929 4.59821 2.97232 5.14018 2.77232C5.57946 2.60089 6.24286 2.39643 7.45804 2.34286C8.77589 2.28393 9.17143 2.26964 12.5045 2.26964C15.8429 2.26964 16.2375 2.28393 17.5509 2.34286C18.7705 2.39643 19.4295 2.60179 19.8688 2.77143C20.4107 2.97232 20.9036 3.28929 21.3036 3.70446C21.7188 4.10893 22.0357 4.59732 22.2357 5.13929C22.4062 5.57857 22.6107 6.24196 22.6652 7.45714C22.7241 8.775 22.7384 9.16964 22.7384 12.5036C22.7384 15.8366 22.7232 16.2268 22.6643 17.5446Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M12.4937 6.07584C10.7918 6.07631 9.15964 6.75263 7.95616 7.95611C6.75268 9.15959 6.07636 10.7917 6.07589 12.4937C6.07636 14.1957 6.75268 15.8278 7.95616 17.0313C9.15964 18.2348 10.7918 18.9111 12.4937 18.9116C14.1956 18.9108 15.8275 18.2344 17.0308 17.031C18.234 15.8275 18.9102 14.1955 18.9107 12.4937C18.9102 10.7919 18.234 9.15988 17.0308 7.95643C15.8275 6.75297 14.1956 6.07655 12.4937 6.07584ZM12.4937 16.6562C11.3895 16.6561 10.3306 16.2173 9.54991 15.4365C8.76921 14.6556 8.33068 13.5966 8.3308 12.4924C8.33092 11.3882 8.76967 10.3292 9.55055 9.54853C10.3314 8.76782 11.3904 8.32929 12.4946 8.32941C13.5988 8.32953 14.6578 8.76829 15.4385 9.54916C16.2192 10.33 16.6577 11.3891 16.6576 12.4933C16.6575 13.5975 16.2187 14.6564 15.4378 15.4371C14.657 16.2178 13.5979 16.6563 12.4937 16.6562ZM20.6634 5.82227C20.6634 6.21974 20.5055 6.60093 20.2244 6.88198C19.9434 7.16304 19.5622 7.32093 19.1647 7.32093C18.7673 7.32093 18.3861 7.16304 18.105 6.88198C17.824 6.60093 17.6661 6.21974 17.6661 5.82227C17.6661 5.4248 17.824 5.04361 18.105 4.76256C18.3861 4.4815 18.7673 4.32361 19.1647 4.32361C19.5622 4.32361 19.9434 4.4815 20.2244 4.76256C20.5055 5.04361 20.6634 5.4248 20.6634 5.82227Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_102_5">
+                                                    <rect width="25" height="25" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="payment-method">
+                                    <span class="accept-payment">Accept Payments:</span>
+                                    <div class="method">
+                                        <div class="img">
+                                            <img src="../image/1x1-00000000.png" data-src="../image/svg/visa.svg"
+                                                alt="visa">
+                                        </div>
+                                        <div class="img">
+                                            <img src="../image/1x1-00000000.png" data-src="../image/svg/mastercard.svg"
+                                                alt="mastercard">
+                                        </div>
+                                        <div class="img">
+                                            <img src="../image/1x1-00000000.png"
+                                                data-src="../image/svg/american-express.svg" alt="american-express">
+                                        </div>
+                                        <div class="img">
+                                            <img src="../image/1x1-00000000.png"
+                                                data-src="../image/svg/klarna-badge.svg" alt="klarna-badge">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-register">
+            <div class="wrap">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="register-address">
+                                <p class="mgb-10">Registered in England 3207791. VAT registration no. 253282120.</p>
+                                <p>Registered office:Whelco Place Enfield Street, Industrial Estate, Pemberton,
+                                    Wigan, Greater Manchester, WN5 8DB</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="FF2023">
+                                <p>© Fitness First Ltd 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../Library/jQuery/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="../Library/OwlCarousel/owl.js"></script>
+    <!-- <script src="../Library/Bootstrap/bootstrap.min.js"></script> -->
+    <script src="script.js"></script>
+</body>
+
+</html>

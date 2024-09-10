@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"
+        integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../image/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Workouts | Fitness First</title>
+</head>
+
+<body>
+    <div class="header1">
+        <div class="wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="secondary-header">
+                            <div class="user-login">
+                                <a href="../Login/index.html">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>login</span>
+                                </a>
+                            </div>
+                            <div class="search-box">
+                                <div>
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <span>Search</span>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav-hidden">
+        <div class="wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="navbar-hidden">
+                            <button type="button" id="close-tab">
+                                <span class="bar top"></span>
+                                <span class="bar bottom"></span>
+                            </button>
+                            <div class="login-hidden">
+                                <a class="login-tag" href="../Login/index.html">
+                                    <img src="../image/svg/icon-person-black.svg" alt="">
+                                    Login
+                                </a>
+                            </div>
+                            <div class="search-box-hidden">
+                                <img src="image/svg/icon-search-black.svg" alt="">
+                                <input type="text" placeholder="Search">
+                            </div>
+                            <ul class="ul-hidden">
+                                <li class="border-top">
+                                    <a href="../FindAGym/index.html">Find a Gym</a>
+                                </li>
+                                <li>
+                                    <a href="../Classes/index.html">Classes</a>
+                                </li>
+                                <li>
+                                    <a href="../PersonalTraining/index.html">Personal Training</a>
+                                </li>
+                                <li>
+                                    <a href="../FFXOnDemand/index.html">FFX On Demand</a>
+                                </li>
+                                <li>
+                                    <a href="../Blog/index.html">Blog</a>
+                                </li>
+                            </ul>
+                            <div class="container-btn">
+                                <a class="btn btn-book-hidden" href="../BookAVisit/index.html">Book a visit</a>
+                            </div>
+                            <div class="container-btn">
+                                <a href="../Join/index.html" class="btn">Join now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header2" id="navbar">
+        <div class="wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="primary-header">
+                            <div class="logo">
+                                <a href="../index.html">
+                                    <img src="../image/logo.svg" alt="home">
+                                </a>
+                            </div>
+                            <div class="primary-navbar">
+                                <div class="navbar">
+                                    <ul id="ul-navbar">
+                                        <li class="nav-item">
+                                            <a href="../FindAGym/index.html">
+                                                Find a Gym
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="../Classes/index.html">
+                                                Classes
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="../PersonalTraining/index.html">
+                                                Personal Training
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="../FFXOnDemand/index.html">
+                                                FFX On Demand
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="../Blog/index.html">
+                                                Blog
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nav-group-button">
+                                    <a class="book-visit btn" href="../BookAVisit/index.html">Book a visit</a>
+                                    <a class="join-now btn" href="../Join/index.html">Join now</a>
+                                </div>
+                                <div class="responsive-navbar">
+                                    <a class="btn" href="../Join/index.html">Join now</a>
+                                    <button type="button" id="primary-nav-trigger">
+                                        <span class="bar top"></span>
+                                        <span class="bar middle"></span>
+                                        <span class="bar bottom"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="search-hidden">
+                                <div class="search-form">
+                                    <div class="search">
+                                        <img src="../image/svg/icon-search-black.svg" alt="">
+                                        <input type="text">
+                                    </div>
+                                    <div class="btn">
+                                        <img src="../image/svg/icon-close-thick-grey.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-header">
+        <img src="../image/workout/hero.jpg" alt="">
+        <div class="wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-md-8">
+                        <div class="bg-header-container">
+                            <div class="bg-header-content">
+                                <p class="wk">Workouts</p>
+                                <h1 class="title">Experience Fitness First</h1>
+                                <a class="btn" href="../Join/index.html">Get membership</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="workout-text">
+        <div class="wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2 class="title">Workout (Just The Way You Like)</h2>
+                        <p class="text">
+                            Customised workout plans are a fantastic addition to any training program, whether you use
+                            them exclusively or to complement your classes and / or personal training sessions.
+                        </p>
+                        <p>
+                            There are so many factors that can go into under or overtraining. They provide structure,
+                            there’s nothing worse than feeling like you are wasting time. If you are a person that loves
+                            to be able to “check” something off, you will naturally gravitate to a structured workout
+                            plan!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block-card">
+        <div class="wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="img">
+                            <img src="../image/workout/ffx_on_demand.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="content">
+                            <p class="title">FFX On Demand</p>
+                            <p class="text">Within the workout tab of your FFX App. You’ll be able to view a huge
+                                selection of pre-determined training plans designed by us for you across 5 different
+                                goal categories If you love to track data this will be the best solution for you.</p>
+                            <p>You’ll also be able to support smooth training planning by adding your own designed
+                                workouts or workouts you’ve seen elsewhere that work for you. Entry of your workout data
+                                couldn’t be anymore simple in or out of the club – automatically through your wearable
+                                device, xcapture feature or manually.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block-card">
+        <div class="wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="img">
+                            <img src="../image/workout/ffx_app.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="content">
+                            <p class="title">FFX App</p>
+                            <p class="text">If you prefer your workouts visually rather than in a plan format you should
+                                head straight to our FFX On Demand ‘Workout’ section. Here you’ll find a huge variety of
+                                workouts across the same 5 categories.</p>
+                            <p>You’ll see the session plan, duration, reps and sets with a guide to weight ranges too,
+                                all with your favourite instructors. Seeing the exercises in full swing helps you learn
+                                and understand the movement patterns, we’ll also highlight the key technique pointers
+                                along the way.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="rich-text">
+        <div class="wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6 rich-text-join">
+                        <div class="put-ff rich-item">
+                            <p class="rich-title">Join now</p>
+                            <p class="rich-text-item">6 week membership for the price of 4</p>
+                            <a class="btn join-now-btn" href="../Join/index.html">Join now</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="membership rich-item">
+                            <p class="rich-title">Book a tour</p>
+                            <p class="rich-text-item">Choose your nearest club</p>
+                            <a class="btn membership-btn" href="../BookATour/index.html">Book a tour</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="title-footer">
+                            <span>PUT YOUR FITNESS FIRST</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row footer-list">
+                    <div class="col-sm-4">
+                        <div class="tag-list">
+                            <p class="title-item">About us
+                                <img src="../image/svg/icon-chevron-down-grey-light.svg" alt="" class="chevron">
+                            </p>
+                            <ul>
+                                <li>
+                                    <p class="child-item">About us</p>
+                                </li>
+                                <li>
+                                    <p class="child-item">Campaigns</p>
+                                </li>
+                                <li>
+                                    <p class="child-item">Student Discount</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="tag-list">
+                            <p class="title-item">Press and Careers
+                                <img src="../image/svg/icon-chevron-down-grey-light.svg" alt="" class="chevron">
+                            </p>
+                            <ul>
+                                <li>
+                                    <p class="child-item">Press Room</p>
+                                </li>
+                                <li>
+                                    <p class="child-item">Careers</p>
+                                </li>
+                                <li>
+                                    <p class="child-item">Become A PT</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="tag-list">
+                            <p class="title-item">Our Gyms
+                                <img src="../image/svg/icon-chevron-down-grey-light.svg" alt="" class="chevron">
+                            </p>
+                            <ul>
+                                <li>
+                                    <p class="child-item">Find a Gym</p>
+                                </li>
+                                <li>
+                                    <p class="child-item">Gyms in London</p>
+                                </li>
+                                <li>
+                                    <p class="child-item">Multi Club Access</p>
+                                </li>
+                                <li>
+                                    <p class="child-item">Our Facilities</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="tag-list">
+                            <p class="title-item">Customer Service
+                                <img src="../image/svg/icon-chevron-down-grey-light.svg" alt="" class="chevron">
+                            </p>
+                            <ul>
+                                <li>
+                                    <p class="child-item">FAQ</p>
+                                </li>
+                                <li>
+                                    <p class="child-item">Contact us</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="tag-list">
+                            <p class="title-item">Membership
+                                <img src="../image/svg/icon-chevron-down-grey-light.svg" alt="" class="chevron">
+                            </p>
+                            <ul>
+                                <li>
+                                    <p class="child-item">Join now</p>
+                                </li>
+                                <li>
+                                    <p class="child-item">Corporate Solutions and Membership</p>
+                                </li>
+                                <li>
+                                    <p class="child-item">Blue Light Card Discount</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="tag-list">
+                            <p class="title-item">Polices and Legal
+                                <img src="../image/svg/icon-chevron-down-grey-light.svg" alt="" class="chevron">
+                            </p>
+                            <ul>
+                                <li>
+                                    <p class="child-item">Membership Terms and Conditions</p>
+                                </li>
+                                <li>
+                                    <p class="child-item">Health Pledge</p>
+                                </li>
+                                <li>
+                                    <p class="child-item">Gym Etiquette</p>
+                                </li>
+                                <li>
+                                    <p class="child-item">Policies</p>
+                                </li>
+                                <li>
+                                    <p class="child-item">Modern Slavery Act</p>
+                                </li>
+                                <li>
+                                    <p class="child-item">Gender Pay Gap 2023</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="payment">
+                            <div class="social-media">
+                                <div class="twitter">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </div>
+                                <div class="facebook">
+                                    <i class="fa-brands fa-square-facebook" style="padding-left: 15px;"></i>
+                                </div>
+                                <div class="instagram">
+                                    <i class="fa-brands fa-instagram" style="padding:0 15px;"></i>
+                                </div>
+                            </div>
+                            <div class="payment-method">
+                                <span class="accept-payment">Accept Payments:</span>
+                                <div class="method">
+                                    <img src="https://www.fitnessfirst.co.uk/media/tzmoh2fg/visa.svg?height=64&amp;rnd=133018791700330000"
+                                        alt="visa">
+                                    <img src="https://www.fitnessfirst.co.uk/media/brhjasca/mastercard.svg?height=64&amp;rnd=133018793873100000"
+                                        alt="mastercard">
+                                    <img src="https://www.fitnessfirst.co.uk/media/0vuppgvd/american-express.svg?height=64&amp;rnd=133018794629800000"
+                                        alt="american-express">
+                                    <img src="https://www.fitnessfirst.co.uk/media/pnjbyxmo/klarna-badge.svg?height=64&amp;rnd=132956354488930000"
+                                        alt="klarna-badge">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="info-register">
+                            <div class="col-sm-6 register-address">
+                                <p>Registered in England 3207791. VAT registration no. 253282120.</p>
+                                <p>Registered office:Whelco Place Enfield Street, Industrial Estate, Pemberton,
+                                    Wigan, Greater Manchester, WN5 8DB</p>
+                            </div>
+                            <div class="col-sm-6 FF2023">
+                                <p>© Fitness First Ltd 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

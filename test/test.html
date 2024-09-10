@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pl {
+            display: block;
+            width: 7.375em;
+            height: 7.375em;
+            transform: rotate(-90deg);
+            overflow: hidden;
+            border-radius: 100%;
+        }
+
+        .pl__ring-rotate,
+        .pl__ring-stroke {
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+
+        .pl__ring-rotate,
+        .pl__ring-stroke {
+            transform-origin: 80px 80px;
+        }
+
+        .pl__ring-rotate {
+            animation-name: ringRotate42;
+        }
+
+        .pl__ring-stroke {
+            animation-name: ringStroke42
+        }
+
+
+        @keyframes ringRotate42 {
+            from {
+                transform: rotate(0);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes ringStroke42 {
+
+            from,
+            to {
+                stroke-dashoffset: 452;
+                transform: rotate(0deg);
+            }
+
+            50% {
+                stroke-dashoffset: 0;
+                transform: rotate(-180deg);
+            }
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="pl" style="background-color: red; width: 500px; height: 500px;">
+        <div class="pl__ring-rotate" style="background-color: blue; width:3px; height: 3px; border-radius: 100%">
+            <div class="pl__ring-stroke" style="background-color: aqua; width: 5px; height: 5px; border-radius: 100%">
+
+            </div>
+        </div>
+        <!-- <img class="" src="../image/background.webp" alt=""> -->
+    </div>
+    <svg class="pl" viewBox="0 0 160 160" width="160px" height="160px" xmlns="http://www.w3.org/2000/svg">
+
+        <g>
+            <g class="pl__ring-rotate">
+                <circle class="pl__ring-stroke" cx="80" cy="80" r="72" fill="none" stroke="hsl(223,90%,55%)"
+                    stroke-width="16" stroke-dasharray="452.39 452.39" stroke-dashoffset="452" stroke-linecap="round"
+                    transform="rotate(-45,80,80)">
+                </circle>
+            </g>
+        </g>
+    </svg>
+</body>
+
+</html>

@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrap {
+    max-width: 1318px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+img{
+    max-width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
+.wrap-small {
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.btn {
+    padding: 22px 20px;
+    background-color: #d70926;
+    border-radius: 0;
+    color: white;
+    font-weight: 600;
+    transition: 250ms ease all;
+}
+
+.btn:hover {
+    background-color: #a80000;
+    color: white;
+}
+
+.header-navbar {
+    box-shadow: none;
+    background: linear-gradient(180deg, #ededec 0%, rgba(237, 237, 236, .2) 100%);
+    position: sticky;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.header-navbar.active{
+    background: none;
+    background-color: #fff;
+}
+
+.header-navbar .main-nav .logo {
+    display: inline-block;
+    width: 106px;
+    float: left;
+}
+
+.header-navbar .main-nav img {
+    width: 100%;
+    height: 100%;
+}
+
+.header-navbar .btn {
+    background-color: #000;
+    color: white;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin-right: 15px;
+}
+
+.join-state {
+    padding: 30px 0 18px;
+}
+
+.join-state .current-state {
+    display: inline-block;
+    padding: 9px 25px;
+    margin-right: 8px;
+    transition: border-color ease .3s, color ease .3s;
+    font-size: 18px;
+    line-height: 1.5;
+    position: relative;
+    width: calc(1067px/4);
+}
+
+.join-state .current-state::before {
+    background: #ededec;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    left: 1.5%;
+    top: 0;
+    transform: skew(-15deg);
+}
+
+.join-state .current-state.active {
+    color: #d70926;
+}
+
+.join-state .current-state:nth-child(1)::before {}
+
+.join-state .current-state:nth-child(2)::before {}
+
+.join-state .current-state:nth-child(3)::before {}
+
+.join-state .current-state:nth-child(4)::before {}
+
+.main-content {
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+
+.main-content .title {
+    font-size: 50px;
+    line-height: 1.1;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.main-content .text {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #5d5d5c;
+    font-weight: 500;
+}
+
+
+.main-content .form-search input[type="text"] {
+    border: none;
+    font-size: 18px;
+    width: 100%;
+    padding: 30px 75px;
+    margin: 0;
+}
+
+.main-content .form-search input[type="text"]:focus {
+    outline: none;
+}
+
+.main-content .form-search {
+    line-height: 1.3;
+    border: 1px solid rgba(93, 93, 92, .3);
+    border-bottom: 4px solid #d70926;
+    position: relative;
+}
+
+.main-content .form-search .icon-search {
+    position: absolute;
+    left: 31px;
+    width: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main-content .form-search .icon-target {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer {
+    background-color: black;
+    color: #9a9a9a;
+    padding: 45px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title-footer {
+    color: #fff;
+    font-size: 26px;
+    margin-bottom: 45px;
+    font-weight: 500;
+}
+
+.tag-list {
+    margin-bottom: 60px;
+}
+
+.title-item {
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.child-item {
+    font-size: 14px;
+    font-weight: 500;
+    transition: 250ms ease color;
+    cursor: pointer;
+}
+
+.child-item:hover {
+    color: #fff;
+}
+
+.social-media {
+    display: inline-block;
+}
+
+.social-media>div {
+    color: white;
+    display: inline-block;
+    font-size: 25px;
+    position: relative;
+    top: 5px;
+}
+
+.payment-method {
+    display: inline-block;
+}
+
+.accept-payment {
+    margin: 0 15px;
+}
+
+.payment-method img {
+    height: 32px;
+    margin-right: .75rem;
+}
+
+.info-register {
+    margin-top: 45px;
+    padding: 30px 0;
+    border-top: 1px solid #5d5d5c;
+}
+
+.register-address {
+    padding: 0;
+}
+
+.FF2023 {
+    padding: 0;
+    text-align: right;
+}
+
+.twitter:hover {
+    color: #38a1f3;
+    cursor: pointer;
+}
+
+.facebook:hover {
+    color: #4267b2;
+    cursor: pointer;
+}
+
+.instagram:hover {
+    color: #bc2a8d;
+    cursor: pointer;
+}
